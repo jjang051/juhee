@@ -1,0 +1,126 @@
+body {
+  font-family: "Poppins", "Noto Sans KR";
+  color: #111;
+  -webkit-font-smoothing: antialiased;
+  background: #a8634e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#a8634e), color-stop(9%, #b6805f), color-stop(50%, #333d6d), to(#161c3a));
+  background: linear-gradient(0deg, #a8634e 0%, #b6805f 9%, #333d6d 50%, #161c3a 100%);
+  min-height: 8000px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+}
+
+#header #logo {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 120px;
+}
+
+#main {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+#main .slogan {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .slogan svg {
+  width: 500px;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+}
+
+#main .slogan img {
+  width: 600px;
+}
+
+#main .balloons {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main .balloons li {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+#main .balloons li img {
+  min-width: 100px;
+}
+
+#main .smallTxt {
+  position: absolute;
+  left: 00px;
+  bottom: 150px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#main .smallTxt span {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+}
+
+#main .smallTxt span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #ca0303;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#main .moon {
+  position: absolute;
+  right: -300px;
+  top: -300px;
+}
+
+#main .moon img {
+  width: 800px;
+}
+
+#main #particle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

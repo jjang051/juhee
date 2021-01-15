@@ -1,0 +1,102 @@
+@import "vars";
+body {
+    font-family: "Poppins", "Noto Sans KR";
+    color: #111;
+    -webkit-font-smoothing: antialiased;
+    background: rgb(168,99,78);
+    background: linear-gradient(0deg, rgba(168,99,78,1) 0%, rgba(182,128,95,1) 9%, rgba(51,61,109,1) 50%, rgba(22,28,58,1) 100%);
+    min-height: 8000px;
+}
+#header {
+    position: fixed;
+    width:100%;
+    height: 150px;
+    #logo {
+        position: absolute;
+        left:50px;
+        top:50px;
+        width:120px;
+    }
+}
+#main {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    
+    .slogan {
+        svg {
+            width:500px;
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.2));
+        }
+        position: absolute;
+        width:100%;
+        height: 100%;
+        left:0;
+        top:0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width:600px;
+        }
+    }
+    .balloons {
+        position: absolute;
+        left:0;
+        top: 0;
+        width:100%;
+        height: 100%;
+        li {
+            position: absolute;
+            left:50%;
+            top: 110%;
+            transform: translate(-50%,-50%);
+            filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
+            img {
+                min-width: 100px;
+            }
+        }
+    }
+    .smallTxt {
+        position: absolute;
+        left:00px;
+        bottom: 150px;
+        transform: rotate(-90deg);
+        color:#fff;
+        text-transform: capitalize;
+        span {
+            display: block;
+            margin-bottom:10px;
+            padding-left: 15px;
+            position: relative;
+            
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width:3px;
+                height: 3px;
+                background-color: rgb(202, 3, 3);
+                top:50%;
+                left:0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .moon {
+        position: absolute;
+        right:-300px;
+        top:-300px;
+        img {
+            width:800px;
+        }
+    }
+    #particle  {
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+    }
+}
